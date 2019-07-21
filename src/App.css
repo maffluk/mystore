@@ -1,33 +1,184 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  background: #f2f2f2;
   min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+header{
+  width: calc(100% - 60px);
+  padding: 0 30px;
+  display: flex;
+  background-color: #0099b2;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(78, 78, 78);
+}
+.storeTitle{
+  font-size: 1.8em;
+  color: white;
+}
+.mainMenu{
+  width: 40%;
+  display: flex;
+  font-size: 1.4em;
+  height: 45px;
+  margin-right: 40px;
+}
+.mainMenu a{
+  width: 25%;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  transition: all .1s ease;
+  color: white;
+  height: 45px;
+}
+
+.mainMenu .selected{
+  background-color: #f2f2f2;
+  color: black;
+}
+.mainMenu a:hover{
+  background-color: #f2f2f2;
+  color: black;
+}
+.mainMenu div, .cart{
+  cursor: pointer;
+}
+.appSearch{
+  width: 20%;
+
+}
+.appSearch input{
+  width: 100%;
+  height: 30px;
+  max-width: 350px;
+  outline:none;
+  background-color: rgb(245, 245, 245);
+  font-size: 1.25em;
+  padding-left: 5px;
+  border: 1px solid rgb(92, 92, 92);
+}
+.appSearch input:focus{
+  background-color: #fff;
+}
+.cart{
+  width: 35px;
+  height: 35px;
+  background-color: black;
+}
+
+.homePage, .goodsPage{
+  width: calc(100% - 60px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 30px;
+}
+.goodsPage{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  flex-direction: row;
+}
+.pageTitle{
+  font-size: 1.5em;
+}
+.pageContent{
+  width: 80%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: safe;
+  padding: 20px;
+}
+.goods{
+  width: 250px;
+  height: 380px;
+  border: 1px solid rgb(51, 51, 51);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: sans-serif, Arial;
+  cursor: pointer;
+}
+.goods img{
+  width: 100%;
+  height: 65%;
+  background-color: pink;
+}
+.sizes{
+  width: 100%;
+  height: 30px;
+  background-color: rgba(44, 44, 44, 0.589);
+  color: white;
+  margin-top: -30px;
+  font-size: 1.15em;
+  line-height: 30px;
+  text-align: center;
+  display: none;
+}
+.goods:hover .sizes{
+  display: block;
+}
+.goodsTitle{
+  margin-top: 15px;
+  font-size: 1.25em;
+  text-align: center;
+}
+.price{
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+.buyBtn{
+  width: 80%;
+  margin-top: auto;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background-color: #d4d4d4;
+  border: 1px solid rgb(112, 112, 112);
+}
+.goods:hover .buyBtn{
+  background-color: rgb(58, 58, 58);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.searchResult{
+  position: absolute;
+  background-color: white;
+  width: calc(20% + 6px);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter{
+  width: 10%;
+  padding: 30px;
+  margin-top: 60px;
+  align-self: flex-start;
+  border: 1px solid rgb(116, 116, 116);
+}
+.filterElement{
+  margin-bottom: 20px;
+}
+.filterTitle{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.variable{
+  margin-bottom: 7px;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+.variable input{
+  margin-right: 7px;
+  width: 18px;
+  height: 18px;
 }

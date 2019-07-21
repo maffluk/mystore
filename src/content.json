@@ -1,0 +1,152 @@
+{
+  "goods": [
+    {
+      "title": "Обувь",
+      "content": [
+        {
+          "name": "Adidas NMD_R1",
+          "price": 130,
+          "sizes": "41, 42, 43",
+          "color": "Белый"
+        },{
+          "name": "Adidas ULTRABOOST 19",
+          "price": 180,
+          "sizes": "41, 43, 44, 45",
+          "color": "Чорный"
+        },{
+          "name": "Adidas Yung-96",
+          "price": 75,
+          "sizes": "41, 42, 43, 44",
+          "color": "Белый"
+        },{
+          "name": "Puma Thunder Desert",
+          "price": 105,
+          "sizes": "44",
+          "color": "Черный"
+        },{
+          "name": "Adidas STAN SMITH",
+          "price": 80,
+          "sizes": "40, 42, 44, 45",
+          "color": "Белый"
+        },{
+          "name": "Adidas U_PATH RUN",
+          "price": 85,
+          "sizes": "39, 41, 42, 44",
+          "color": "Серый"
+        },{
+          "name": "Puma Thunder Spectra",
+          "price": 100,
+          "sizes": "41, 42, 44",
+          "color": "Белый"
+        }
+      ],
+      "filters": [
+        {
+          "title": "Размер",
+          "variables": [39, 40, 41, 42, 43, 44, 45]
+        },{
+          "title": "Цвет",
+          "variables": ["Белый", "Черный", "Серый"]
+        }
+      ]
+    },{
+      "title": "Куртки",
+      "content": [
+        {
+          "name": "Adidas FIREBIRD TRACK",
+          "price": 70,
+          "sizes": "S, M, L"
+        },{
+          "name": "Adidas CLIMB THE CITY",
+          "price": 80,
+          "sizes": "S, L"
+        },{
+          "name": "Adidas HELIONIC HOODED DOWN",
+          "price": 150,
+          "sizes": "S, M, L, XL"
+        },{
+          "name": "Adidas VARILITE DOWN",
+          "price": 115,
+          "sizes": "L, XL, XXL"
+        }
+      ],
+      "filters": [
+        {
+          "title": "Размер",
+          "variables": ["S", "M", "L", "XL", "XXL"]
+        },{
+          "title": "Цвет",
+          "variables": ["Белый", "Черный", "Серый", "Красный"]
+        }
+      ]
+    },{
+      "title": "Шорты",
+      "content": [
+        {
+          "name": "Adidas ULTIMATE365",
+          "price": 65,
+          "sizes": "S, M, L"
+        },{
+          "name": "Adidas 3-STRIPES",
+          "price": 45,
+          "sizes": "S, M, L"
+        },{
+          "name": "Adidas OWN THE RUN",
+          "price": 35,
+          "sizes": "S, M, L, XL"
+        },{
+          "name": "Adidas CORE 18 TRAINING ",
+          "price": 25,
+          "sizes": "S, M, L"
+        }
+      ],
+      "filters": [
+        {
+          "title": "Размер",
+          "variables": ["S", "M", "L", "XL", "XXL"]
+        },{
+          "title": "Цвет",
+          "variables": ["Белый", "Черный", "Серый", "Красный"]
+        }
+      ]
+    },{
+      "title": "Футболки",
+      "content": [
+        {
+          "name": "Adidas SPEED BLUR",
+          "price": 30,
+          "sizes": "S, M, L"
+        },{
+          "name": "Adidas TRICOLOR STACKE",
+          "price": 30,
+          "sizes": "S, L"
+        },{
+          "name": "Adidas 3-STRIPES TEE",
+          "price": 25,
+          "sizes": "S, M, L, XL"
+        },{
+          "name": "Adidas TREFOIL TEE",
+          "price": 45,
+          "sizes": "L, XL, XXL"
+        },{
+          "name": "BADGE OF SPORT CLASSIC TEE",
+          "price": 25,
+          "sizes": "S, M, XL"
+        },{
+          "name": "ALPHASKIN BADGE OF SPORT TEE",
+          "price": 45,
+          "sizes": "S, XL, XXL"
+        }
+      ],
+      "filters": [
+        {
+          "title": "Размер",
+          "variables": ["S", "M", "L", "XL", "XXL"]
+        },{
+          "title": "Цвет",
+          "variables": ["Белый", "Черный", "Серый", "Красный"]
+        }
+      ]
+    }
+  ]
+}
