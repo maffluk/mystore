@@ -9,18 +9,43 @@ export default ({ data: { title, content, filters } }) => {
       }
     })
   )
-  let filtered = false
-  console.log(checkedFilters)
   let goodsList = content.map(({ name, price, props }) => {
-    return (
+    let el = (
       <div className='goods' key={name}>
         <img alt={name} />
-        {/* <div className='sizes'>{props[0].values.join(', ')}</div> */}
+        <div className='sizes'>{props[0].values.join(', ')}</div>
         <div className='goodsTitle'>{name}</div>
         <div className='price'>{price}$</div>
         <div className='buyBtn'>В корзину</div>
       </div>
     )
+
+    let arr = []
+    outer: for (let p = 0; p < checkedFilters.length; p++) {
+      for (let j = 0; j < props.length; j++) {
+        console.log(props[j])
+        if (checkedFilters[p].title === props[j].title && checkedFilters[p].checked.length !== 0) {
+          for (let i = 0; i < props[j].values.length; i++) {
+            if (checkedFilters[p].checked.includes(props[j].values[i])) {
+              arr.push(true)
+              continue outer
+            }
+            else {
+              if(i === props[j].values.length - 1){
+                console.log('last')
+                arr.push(false)
+              }
+            }
+          }
+        }
+      }
+    }
+
+    console.log(arr)
+    if (arr.every(el => el === true)) {
+      return el
+    }
+    return null
   })
 
   let filter = filters.map(({ title, variables }) => {
@@ -42,7 +67,6 @@ export default ({ data: { title, content, filters } }) => {
   })
 
   const getNewFilter = (title, value) => {
-    filtered = true
     return checkedFilters.map(item => {
       if (title === item.title) {
         let checkedList = [...item.checked]

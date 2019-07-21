@@ -6,38 +6,87 @@
         {
           "name": "Adidas NMD_R1",
           "price": 130,
-          "sizes": "41, 42, 43",
-          "color": "Белый"
+          "props": [
+            {
+              "title": "Размер",
+              "values": [41, 42, 43]
+            },{
+              "title": "Цвет",
+              "values": ["Черный"]
+            }
+          ]
         },{
           "name": "Adidas ULTRABOOST 19",
           "price": 180,
-          "sizes": "41, 43, 44, 45",
-          "color": "Чорный"
+          "props": [
+            {
+              "title": "Размер",
+              "values": [41, 42]
+            },{
+              "title": "Цвет",
+              "values": ["Белый"]
+            }
+          ]
         },{
           "name": "Adidas Yung-96",
           "price": 75,
-          "sizes": "41, 42, 43, 44",
-          "color": "Белый"
+          "props": [
+            {
+              "title": "Размер",
+              "values": [41, 42, 43, 45]
+            },{
+              "title": "Цвет",
+              "values": ["Черный"]
+            }
+          ]
         },{
           "name": "Puma Thunder Desert",
           "price": 105,
-          "sizes": "44",
-          "color": "Черный"
+          "props": [
+            {
+              "title": "Размер",
+              "values": [39, 40]
+            },{
+              "title": "Цвет",
+              "values": ["Белый"]
+            }
+          ]
         },{
           "name": "Adidas STAN SMITH",
           "price": 80,
-          "sizes": "40, 42, 44, 45",
-          "color": "Белый"
+          "props": [
+            {
+              "title": "Размер",
+              "values": [41, 42, 43]
+            },{
+              "title": "Цвет",
+              "values": ["Белый"]
+            }
+          ]
         },{
           "name": "Adidas U_PATH RUN",
           "price": 85,
-          "sizes": "39, 41, 42, 44",
-          "color": "Серый"
+          "props": [
+            {
+              "title": "Размер",
+              "values": [41, 42, 43, 44, 45]
+            },{
+              "title": "Цвет",
+              "values": ["Черный"]
+            }
+          ]
         },{
           "name": "Puma Thunder Spectra",
           "price": 100,
-          "sizes": "41, 42, 44",
-          "color": "Белый"
+          "props": [
+            {
+              "title": "Размер",
+              "values": [39, 40, 42]
+            },{
+              "title": "Цвет",
+              "values": ["Серый"]
+            }
+          ]
         }
       ],
       "filters": [
