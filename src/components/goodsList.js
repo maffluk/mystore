@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default ({ data: { title, content, filters } }) => {
+export default ({ data: { title, content, filters }, buy }) => {
   let [checkedFilters, setFilter] = useState(
     filters.map(({ title }) => {
       return {
@@ -11,7 +11,7 @@ export default ({ data: { title, content, filters } }) => {
   )
   let goodsList = content.map(({ name, price, props }) => {
     let el = (
-      <div className='goods' key={name}>
+      <div className='goods' key={name} onClick={() => buy(name, price)}>
         <img alt={name} />
         <div className='sizes'>{props[0].values.join(', ')}</div>
         <div className='goodsTitle'>{name}</div>
@@ -23,7 +23,6 @@ export default ({ data: { title, content, filters } }) => {
     let arr = []
     outer: for (let p = 0; p < checkedFilters.length; p++) {
       for (let j = 0; j < props.length; j++) {
-        console.log(props[j])
         if (checkedFilters[p].title === props[j].title && checkedFilters[p].checked.length !== 0) {
           for (let i = 0; i < props[j].values.length; i++) {
             if (checkedFilters[p].checked.includes(props[j].values[i])) {
@@ -32,7 +31,6 @@ export default ({ data: { title, content, filters } }) => {
             }
             else {
               if(i === props[j].values.length - 1){
-                console.log('last')
                 arr.push(false)
               }
             }
@@ -40,8 +38,6 @@ export default ({ data: { title, content, filters } }) => {
         }
       }
     }
-
-    console.log(arr)
     if (arr.every(el => el === true)) {
       return el
     }

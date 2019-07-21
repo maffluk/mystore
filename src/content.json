@@ -104,19 +104,51 @@
         {
           "name": "Adidas FIREBIRD TRACK",
           "price": 70,
-          "sizes": "S, M, L"
+          "props": [
+            {
+              "title": "Размер",
+              "values": ["S", "M", "L"]
+            },{
+              "title": "Цвет",
+              "values": ["Черный"]
+            }
+          ]
         },{
           "name": "Adidas CLIMB THE CITY",
           "price": 80,
-          "sizes": "S, L"
+          "props": [
+            {
+              "title": "Размер",
+              "values": ["S", "L"]
+            },{
+              "title": "Цвет",
+              "values": ["Серый"]
+            }
+          ]
         },{
           "name": "Adidas HELIONIC HOODED DOWN",
           "price": 150,
-          "sizes": "S, M, L, XL"
+          "props": [
+            {
+              "title": "Размер",
+              "values": ["S", "M", "L", "XL"]
+            },{
+              "title": "Цвет",
+              "values": ["Серый"]
+            }
+          ]
         },{
           "name": "Adidas VARILITE DOWN",
           "price": 115,
-          "sizes": "L, XL, XXL"
+          "props": [
+            {
+              "title": "Размер",
+              "values": ["L", "XL", "XXL"]
+            },{
+              "title": "Цвет",
+              "values": ["Белый"]
+            }
+          ]
         }
       ],
       "filters": [

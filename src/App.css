@@ -96,8 +96,10 @@ header{
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: safe;
   padding: 20px;
+}
+.homePage .pageContent{
+  justify-content: space-between;
 }
 .goods{
   width: 250px;
