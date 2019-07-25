@@ -312,5 +312,104 @@
         }
       ]
     }
+  ],
+  "popular": [
+    {
+      "name": "Adidas NMD_R1",
+      "price": 130,
+      "img": "https://assets.adidas.com/images/w_600,f_auto,q_auto/160be65a2069403f9df9a8270018e424_9366/NMD_R1_Shoes_Black_B79758_01_standard.jpg",
+      "props": [
+        {
+          "title": "Размер",
+          "values": [41, 42, 43]
+        },{
+          "title": "Цвет",
+          "values": ["Черный"]
+        }
+      ]
+    },{
+          "name": "Adidas ULTRABOOST 19",
+          "price": 180,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/4d916b2719154d529b58a9a700dca94b_9366/Ultraboost_19_Shoes_Black_B37704_01_standard.jpg",
+          "props": [
+            {
+              "title": "Размер",
+              "values": [41, 42]
+            },{
+              "title": "Цвет",
+              "values": ["Белый"]
+            }
+          ]
+    },{
+      "name": "Adidas ALPHASKIN BADGE OF SPORT TEE",
+      "price": 45,
+      "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/2b5ce5c055fa4f0dad15a92f005b7a27_9366/Alphaskin_Badge_of_Sport_Tee_Black_DW4144_21_model.jpg",
+      "props": [{
+        "title": "Размер",
+        "values": ["M", "L", "XL", "XXL"]
+      },{
+        "title": "Цвет",
+        "values": ["Черный"]
+      }]
+    },{
+      "name": "Adidas 3-STRIPES TEE",
+      "price": 25,
+      "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/7faf852ad1604a01808fa83500d479d7_9366/3_Stripes_Tee_Black_CW1202_21_model.jpg",
+      "props": [{
+        "title": "Размер",
+        "values": ["S", "M", "XXL"]
+      },{
+        "title": "Цвет",
+        "values": ["Черный"]
+      }]
+    },{
+      "name": "Adidas CORE 18 TRAINING",
+      "price": 25,
+      "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/f307d4bf127b4728b6a9a8230145375b_9366/Core_18_Training_Shorts_Black_CE9031_21_model.jpg",
+      "props": [{
+        "title": "Размер",
+        "values": ["S", "M", "L", "XL", "XXL"]
+      },{
+        "title": "Цвет",
+        "values": ["Черный"]
+      }]
+    },{
+      "name": "Adidas OWN THE RUN",
+      "price": 35,
+      "img": "https://i.ebayimg.com/images/g/iFIAAOSwPg9cTWxy/s-l300.jpg",
+      "props": [{
+        "title": "Размер",
+        "values": ["S", "L"]
+      },{
+        "title": "Цвет",
+        "values": ["Серый"]
+      }]
+    },{
+      "name": "Adidas U_PATH RUN",
+      "price": 85,
+      "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/a8080c6d00924b9f8673a9c300cf22f9_9366/Krossovki_U_Path_chernyj_G27636_01_standard.jpg",
+      "props": [
+        {
+          "title": "Размер",
+          "values": [41, 42, 43, 44, 45]
+        },{
+          "title": "Цвет",
+          "values": ["Черный"]
+        }
+      ]
+    },{
+      "name": "Puma Thunder Spectra",
+      "price": 100,
+      "img": "https://images.puma.net/images/367516/08/sv01/fnd/EEA/w/600/h/600/",
+      "props": [
+        {
+          "title": "Размер",
+          "values": [39, 40, 42]
+        },{
+          "title": "Цвет",
+          "values": ["Серый"]
+        }
+      ]
+    }
   ]
 }

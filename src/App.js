@@ -22,10 +22,7 @@ function App() {
       if(window.innerWidth < 1270 && window.innerWidth > 1000) document.getElementsByClassName('openCart')[0].style.right = '-40%'
       if(window.innerWidth < 1000 && window.innerWidth > 750) document.getElementsByClassName('openCart')[0].style.right = '-60%'
       if(window.innerWidth < 750 && window.innerWidth > 700) document.getElementsByClassName('openCart')[0].style.right = '-70%'
-      if(window.innerWidth < 700){
-        // document.getElementsByClassName('openCart')[0].style.display = 'none'
-        document.getElementsByClassName('openCart')[0].style.right = '-100%'
-      } 
+      if(window.innerWidth < 700) document.getElementsByClassName('openCart')[0].style.right = '-100%'
     } 
   })
 
@@ -79,7 +76,7 @@ function App() {
       <div className="App">
         <Header cartLength={cart.length} openCart={openCart} isOpenCart={isOpenCart}/>
         <Cart cart={cart} removeFromCart={removeFromCart}/>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" render={() => <Home data={data.popular} buy={buy} />} />
         <Route path='/shoes' render={() => <GoodsList data={data.goods[0]} buy={buy} />} />
         <Route path='/jackets' render={() => <GoodsList data={data.goods[1]} buy={buy} />} />
         <Route path='/shorts' render={() => <GoodsList data={data.goods[2]} buy={buy} />} />

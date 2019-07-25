@@ -328,9 +328,12 @@ header{
   }
   .filter{
     width: 80%;
+    padding: 5px 30px;
+    margin-top: 0;
   }
   .pageContent{
     width: 100%;
+    margin-top: 0;
   }
   .goods{
     width: 100%;

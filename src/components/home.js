@@ -1,20 +1,14 @@
 import React from 'react'
+import GoodsCard from './goodsCard'
 
-export default () => {
+export default ({data, buy}) => {
+  let list = data.map(({name, price, img, props}) => <GoodsCard name={name} buy={buy} sizes={props[0].values.join(', ')} price={price} img={img} />)
+
   return(
     <div className='homePage'>
       <div className='pageTitle'>Популярные товары</div>
       <div className='pageContent'>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
-        <div className='goods'></div>
+        {list}
       </div>
     </div>
   )
