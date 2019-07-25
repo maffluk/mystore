@@ -26,7 +26,7 @@ export default ({ title, variables, checkedFilters, setFilter }) => {
       <div className='variables'>
         {variables.map(elem => {
           return (
-            <div className='variable'>
+            <div className='variable' key={elem}>
               <input type='checkbox' onClick={() => setFilter(getNewFilter(title, elem))} name={elem} />
               <label>{elem}</label>
             </div>

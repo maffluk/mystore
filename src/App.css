@@ -272,6 +272,9 @@ header{
   .filter{
     width: 15%;
   }
+  .pageContent{
+    width: 95%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .openCart{

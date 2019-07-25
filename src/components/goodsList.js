@@ -14,7 +14,7 @@ export default ({ data: { title, content, filters }, buy }) => {
   )
 
   let goodsList = content.map(({ name, price, props, img }) => {
-    let el = <GoodsCard name={name} buy={buy} sizes={props[0].values.join(', ')} price={price} img={img} />
+    let el = <GoodsCard name={name} buy={buy} key={name} sizes={props[0].values.join(', ')} price={price} img={img} />
 
     let arr = []
 
@@ -39,7 +39,7 @@ export default ({ data: { title, content, filters }, buy }) => {
     return null
   })
 
-  let filter = filters.map(({ title, variables }) => <Filter title={title} variables={variables} setFilter={setFilter} checkedFilters={checkedFilters} />)
+  let filter = filters.map(({ title, variables }) => <Filter key={title} title={title} variables={variables} setFilter={setFilter} checkedFilters={checkedFilters} />)
 
   return (
     <div className='goodsPage'>
