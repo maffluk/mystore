@@ -5,7 +5,7 @@ export default ({ cart, removeFromCart }) => {
 	let order = cart.map(({ title, ammount, price, img }) => {
 		totalPrice += price
 		return (
-			<div className='orderItem'>
+			<div className='orderItem' key={title}>
 				<img alt={title} src={img} />
 				<div>
 					<div className='itemTitle'>{title}</div>
