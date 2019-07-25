@@ -329,4 +329,11 @@ header{
   .filter{
     width: 80%;
   }
+  .pageContent{
+    width: 100%;
+  }
+  .goods{
+    width: 100%;
+    height: auto;
+  }
 }
