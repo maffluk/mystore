@@ -13,9 +13,20 @@ function App() {
 
   useEffect(() => {
     if(isOpenCart){
+      if(window.innerWidth < 700) document.getElementsByClassName('openCart')[0].style.display = 'block';
       document.getElementsByClassName('openCart')[0].style.right = 0;
     }
-    else document.getElementsByClassName('openCart')[0].style.right = '-30%';
+    else{
+      if(window.innerWidth > 1450) document.getElementsByClassName('openCart')[0].style.right = '-30%'
+      if(window.innerWidth < 1450 && window.innerWidth > 1270) document.getElementsByClassName('openCart')[0].style.right = '-35%'
+      if(window.innerWidth < 1270 && window.innerWidth > 1000) document.getElementsByClassName('openCart')[0].style.right = '-40%'
+      if(window.innerWidth < 1000 && window.innerWidth > 750) document.getElementsByClassName('openCart')[0].style.right = '-60%'
+      if(window.innerWidth < 750 && window.innerWidth > 700) document.getElementsByClassName('openCart')[0].style.right = '-70%'
+      if(window.innerWidth < 700){
+        // document.getElementsByClassName('openCart')[0].style.display = 'none'
+        document.getElementsByClassName('openCart')[0].style.right = '-100%'
+      } 
+    } 
   })
 
   const buy = (title, price, img) => {
