@@ -110,6 +110,7 @@
       "content": [
         {
           "name": "Adidas FIREBIRD TRACK",
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/a3c730de8b294f1fa3b7a95800eae74a_9366/Firebird_Track_Jacket_Black_DV1530_21_model.jpg",
           "price": 70,
           "props": [
             {
@@ -123,6 +124,7 @@
         },{
           "name": "Adidas CLIMB THE CITY",
           "price": 80,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/ab9c83f3794147648ed4a93e012199fd_9366/Climb_the_City_Jacket_Grey_DT4105_21_model.jpg",
           "props": [
             {
               "title": "Размер",
@@ -135,25 +137,27 @@
         },{
           "name": "Adidas HELIONIC HOODED DOWN",
           "price": 150,
+          "img": "https://images.ua.prom.st/895224745_w640_h640_puhovik-muzhskoj-s.jpg",
           "props": [
             {
               "title": "Размер",
               "values": ["S", "M", "L", "XL"]
             },{
               "title": "Цвет",
-              "values": ["Серый"]
+              "values": ["Черный"]
             }
           ]
         },{
           "name": "Adidas VARILITE DOWN",
           "price": 115,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/e566eed0ad034b1bb0b5a78d00845e82_9366/Varilite_Down_Jacket_Black_BS1588_21_model.jpg",
           "props": [
             {
               "title": "Размер",
               "values": ["L", "XL", "XXL"]
             },{
               "title": "Цвет",
-              "values": ["Белый"]
+              "values": ["Черный"]
             }
           ]
         }
@@ -174,6 +178,7 @@
         {
           "name": "Adidas ULTIMATE365",
           "price": 65,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/0bc3210796024525a5c8a86301735c10_9366/Ultimate365_Shorts_Grey_CD9875_21_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "M", "L"]
@@ -184,6 +189,7 @@
         },{
           "name": "Adidas 3-STRIPES",
           "price": 45,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/5f53e0174d6c4b42a041a8040004137e_9366/Essentials_3_Stripes_Shorts_Black_BR3266_25_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "M", "XL"]
@@ -194,6 +200,7 @@
         },{
           "name": "Adidas OWN THE RUN",
           "price": 35,
+          "img": "https://i.ebayimg.com/images/g/iFIAAOSwPg9cTWxy/s-l300.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "L"]
@@ -202,14 +209,15 @@
             "values": ["Серый"]
           }]
         },{
-          "name": "Adidas CORE 18 TRAINING ",
+          "name": "Adidas CORE 18 TRAINING",
           "price": 25,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/f307d4bf127b4728b6a9a8230145375b_9366/Core_18_Training_Shorts_Black_CE9031_21_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "M", "L", "XL", "XXL"]
           },{
             "title": "Цвет",
-            "values": ["Белый"]
+            "values": ["Черный"]
           }]
         }
       ],
@@ -219,7 +227,7 @@
           "variables": ["S", "M", "L", "XL", "XXL"]
         },{
           "title": "Цвет",
-          "variables": ["Белый", "Черный", "Серый", "Красный"]
+          "variables": ["Белый", "Черный", "Серый"]
         }
       ]
     },
@@ -229,6 +237,7 @@
         {
           "name": "Adidas SPEED BLUR",
           "price": 30,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/f7984df793784cf4ba56aa7c0117035c_9366/SPEED_BLUR_White_FT8628_21_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "M", "L"]
@@ -239,16 +248,18 @@
         },{
           "name": "Adidas TRICOLOR STACKE",
           "price": 30,
+          "img": "https://assets.adidas.com/images/w_600,f_auto,q_auto/e4f897f157104f2e891daa7c0116fc34_9366/TRICOLOR_STACKE_White_FT8627_41_detail.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "XL", "XXL"]
           },{
             "title": "Цвет",
-            "values": ["Черный"]
+            "values": ["Белый"]
           }]
         },{
           "name": "Adidas 3-STRIPES TEE",
           "price": 25,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/7faf852ad1604a01808fa83500d479d7_9366/3_Stripes_Tee_Black_CW1202_21_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "M", "XXL"]
@@ -259,16 +270,18 @@
         },{
           "name": "Adidas TREFOIL TEE",
           "price": 45,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/3aaad18336474db79499a83500f43db8_9366/Trefoil_Tee_Grey_CY4574_21_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["L", "XL", "XXL"]
           },{
             "title": "Цвет",
-            "values": ["Белый"]
+            "values": ["Серый"]
           }]
         },{
-          "name": "BADGE OF SPORT CLASSIC TEE",
+          "name": "Adidas BADGE OF SPORT CLASSIC TEE",
           "price": 25,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/fe02d42677b24f4bae1ca64b00fff8dd_9366/Badge_of_Sport_Classic_Tee_White_AZ1537_21_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["S", "M", "L", "XXL"]
@@ -277,8 +290,9 @@
             "values": ["Белый"]
           }]
         },{
-          "name": "ALPHASKIN BADGE OF SPORT TEE",
+          "name": "Adidas ALPHASKIN BADGE OF SPORT TEE",
           "price": 45,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/2b5ce5c055fa4f0dad15a92f005b7a27_9366/Alphaskin_Badge_of_Sport_Tee_Black_DW4144_21_model.jpg",
           "props": [{
             "title": "Размер",
             "values": ["M", "L", "XL", "XXL"]

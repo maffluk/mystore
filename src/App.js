@@ -15,16 +15,17 @@ function App() {
     if(isOpenCart){
       document.getElementsByClassName('openCart')[0].style.right = 0;
     }
-    else document.getElementsByClassName('openCart')[0].style.right = '-35%';
+    else document.getElementsByClassName('openCart')[0].style.right = '-30%';
   })
 
-  const buy = (title, price) => {
+  const buy = (title, price, img) => {
     let newCart = [...cart]
     if (newCart.length === 0) {
       newCart.push({
         title,
         ammount: 1,
-        price
+        price,
+        img
       })
     }
     else{
@@ -39,7 +40,8 @@ function App() {
             newCart.push({
               title,
               ammount: 1,
-              price
+              price,
+              img
             })
             break
           }
@@ -50,11 +52,22 @@ function App() {
     setCart(newCart)
   }
 
+  const removeFromCart = (title) => {
+    let newCart = [...cart]
+    for(let i = 0; i < newCart.length; i++){
+      if(newCart[i].title === title){
+        newCart.splice(i, 1)
+        break
+      }
+    }
+    setCart(newCart)
+  }
+
   return (
     <Router>
       <div className="App">
         <Header cartLength={cart.length} openCart={openCart} isOpenCart={isOpenCart}/>
-        <Cart cart={cart}/>
+        <Cart cart={cart} removeFromCart={removeFromCart}/>
         <Route exact path="/" component={Home} />
         <Route path='/shoes' render={() => <GoodsList data={data.goods[0]} buy={buy} />} />
         <Route path='/jackets' render={() => <GoodsList data={data.goods[1]} buy={buy} />} />
