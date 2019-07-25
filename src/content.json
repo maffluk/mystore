@@ -6,6 +6,7 @@
         {
           "name": "Adidas NMD_R1",
           "price": 130,
+          "img": "https://assets.adidas.com/images/w_600,f_auto,q_auto/160be65a2069403f9df9a8270018e424_9366/NMD_R1_Shoes_Black_B79758_01_standard.jpg",
           "props": [
             {
               "title": "Размер",
@@ -18,6 +19,7 @@
         },{
           "name": "Adidas ULTRABOOST 19",
           "price": 180,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/4d916b2719154d529b58a9a700dca94b_9366/Ultraboost_19_Shoes_Black_B37704_01_standard.jpg",
           "props": [
             {
               "title": "Размер",
@@ -30,6 +32,7 @@
         },{
           "name": "Adidas Yung-96",
           "price": 75,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/6e0dcf74085049188e97a9840142df5c_9366/Krossovki_Yung_chernyj_F35019_01_standard.jpg",
           "props": [
             {
               "title": "Размер",
@@ -42,6 +45,7 @@
         },{
           "name": "Puma Thunder Desert",
           "price": 105,
+          "img": "https://kickz.akamaized.net/us/media/images/p/250/puma-Thunder_Desert-Bright_White_Gray_Violet_Puma_White-1.jpg",
           "props": [
             {
               "title": "Размер",
@@ -54,6 +58,7 @@
         },{
           "name": "Adidas STAN SMITH",
           "price": 80,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/4edaa6d5b65a40d19f20a7fa00ea641f_9366/Kedy_Stan_Smith_belyj_M20325_01_standard.jpg",
           "props": [
             {
               "title": "Размер",
@@ -66,6 +71,7 @@
         },{
           "name": "Adidas U_PATH RUN",
           "price": 85,
+          "img": "https://assets.adidas.com/images/w_600,h_600,f_auto,q_auto:sensitive,fl_lossy/a8080c6d00924b9f8673a9c300cf22f9_9366/Krossovki_U_Path_chernyj_G27636_01_standard.jpg",
           "props": [
             {
               "title": "Размер",
@@ -78,6 +84,7 @@
         },{
           "name": "Puma Thunder Spectra",
           "price": 100,
+          "img": "https://images.puma.net/images/367516/08/sv01/fnd/EEA/w/600/h/600/",
           "props": [
             {
               "title": "Размер",
@@ -160,25 +167,50 @@
           "variables": ["Белый", "Черный", "Серый", "Красный"]
         }
       ]
-    },{
+    },
+    {
       "title": "Шорты",
       "content": [
         {
           "name": "Adidas ULTIMATE365",
           "price": 65,
-          "sizes": "S, M, L"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "M", "L"]
+          },{
+            "title": "Цвет",
+            "values": ["Белый"]
+          }]
         },{
           "name": "Adidas 3-STRIPES",
           "price": 45,
-          "sizes": "S, M, L"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "M", "XL"]
+          },{
+            "title": "Цвет",
+            "values": ["Черный"]
+          }]
         },{
           "name": "Adidas OWN THE RUN",
           "price": 35,
-          "sizes": "S, M, L, XL"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "L"]
+          },{
+            "title": "Цвет",
+            "values": ["Серый"]
+          }]
         },{
           "name": "Adidas CORE 18 TRAINING ",
           "price": 25,
-          "sizes": "S, M, L"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "M", "L", "XL", "XXL"]
+          },{
+            "title": "Цвет",
+            "values": ["Белый"]
+          }]
         }
       ],
       "filters": [
@@ -190,33 +222,70 @@
           "variables": ["Белый", "Черный", "Серый", "Красный"]
         }
       ]
-    },{
+    },
+    {
       "title": "Футболки",
       "content": [
         {
           "name": "Adidas SPEED BLUR",
           "price": 30,
-          "sizes": "S, M, L"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "M", "L"]
+          },{
+            "title": "Цвет",
+            "values": ["Белый"]
+          }]
         },{
           "name": "Adidas TRICOLOR STACKE",
           "price": 30,
-          "sizes": "S, L"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "XL", "XXL"]
+          },{
+            "title": "Цвет",
+            "values": ["Черный"]
+          }]
         },{
           "name": "Adidas 3-STRIPES TEE",
           "price": 25,
-          "sizes": "S, M, L, XL"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "M", "XXL"]
+          },{
+            "title": "Цвет",
+            "values": ["Черный"]
+          }]
         },{
           "name": "Adidas TREFOIL TEE",
           "price": 45,
-          "sizes": "L, XL, XXL"
+          "props": [{
+            "title": "Размер",
+            "values": ["L", "XL", "XXL"]
+          },{
+            "title": "Цвет",
+            "values": ["Белый"]
+          }]
         },{
           "name": "BADGE OF SPORT CLASSIC TEE",
           "price": 25,
-          "sizes": "S, M, XL"
+          "props": [{
+            "title": "Размер",
+            "values": ["S", "M", "L", "XXL"]
+          },{
+            "title": "Цвет",
+            "values": ["Белый"]
+          }]
         },{
           "name": "ALPHASKIN BADGE OF SPORT TEE",
           "price": 45,
-          "sizes": "S, XL, XXL"
+          "props": [{
+            "title": "Размер",
+            "values": ["M", "L", "XL", "XXL"]
+          },{
+            "title": "Цвет",
+            "values": ["Черный"]
+          }]
         }
       ],
       "filters": [

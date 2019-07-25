@@ -15,7 +15,7 @@ header{
   width: calc(100% - 60px);
   padding: 0 30px;
   display: flex;
-  background-color: #0099b2;
+  background-color: rgb(58, 58, 58);
   justify-content: space-between;
   align-items: center;
   color: rgb(78, 78, 78);
@@ -70,11 +70,22 @@ header{
   background-color: #fff;
 }
 .cart{
-  width: 35px;
-  height: 35px;
-  background-color: black;
+  width: 30px;
+  height: 30px;
+  background-image: url('./icons/корзина-для-сайта-png-4.png');
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
 }
-
+.cartLength{
+  position: relative;
+  top: 14px;
+  z-index: 1;
+  font-size: 1.2em;
+  right: -30px;
+  color: white;
+}
 .homePage, .goodsPage{
   width: calc(100% - 60px);
   display: flex;
@@ -104,12 +115,12 @@ header{
 .goods{
   width: 250px;
   height: 380px;
-  border: 1px solid rgb(51, 51, 51);
+  border: 1px solid rgb(185, 185, 185);
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   font-family: sans-serif, Arial;
   cursor: pointer;
 }
@@ -128,6 +139,9 @@ header{
   line-height: 30px;
   text-align: center;
   display: none;
+}
+.goods:hover{
+  border-color: rgb(37, 37, 37);
 }
 .goods:hover .sizes{
   display: block;
@@ -183,4 +197,35 @@ header{
   margin-right: 7px;
   width: 18px;
   height: 18px;
+}
+.openCart{
+  position: fixed;
+  right: -35%;
+  width: 35%;
+  min-height: 50vh;
+  background: rgb(58, 58, 58);
+  z-index: 2;
+  top: 45px;
+  transition: all .3s ease-in-out;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cartTitle{
+  font-size: 1.4em;
+  margin: 15px 0;
+}
+.orderItem{
+  height: 100px;
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+  border-top: 1px solid #e4e4e4;
+}
+.orderItem img{
+  width: 60px;
+  height: 60px;
 }

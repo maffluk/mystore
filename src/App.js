@@ -5,9 +5,18 @@ import data from './content.json'
 import Header from './components/header'
 import Home from './components/home'
 import GoodsList from './components/goodsList'
+import Cart from './components/cart'
 
 function App() {
   let [cart, setCart] = useState([])
+  let [isOpenCart, openCart] = useState(false)
+
+  useEffect(() => {
+    if(isOpenCart){
+      document.getElementsByClassName('openCart')[0].style.right = 0;
+    }
+    else document.getElementsByClassName('openCart')[0].style.right = '-35%';
+  })
 
   const buy = (title, price) => {
     let newCart = [...cart]
@@ -37,20 +46,15 @@ function App() {
         }
       }
     }
-
     
     setCart(newCart)
   }
 
-  useEffect(() => {
-    console.log(cart)
-  })
-
-
   return (
     <Router>
       <div className="App">
-        <Header />
+        <Header cartLength={cart.length} openCart={openCart} isOpenCart={isOpenCart}/>
+        <Cart cart={cart}/>
         <Route exact path="/" component={Home} />
         <Route path='/shoes' render={() => <GoodsList data={data.goods[0]} buy={buy} />} />
         <Route path='/jackets' render={() => <GoodsList data={data.goods[1]} buy={buy} />} />
