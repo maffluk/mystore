@@ -20,7 +20,7 @@ export default ({ cart, removeFromCart, isOpenCart }) => {
 	})
 
 	const handleClick = () => {
-		if(cart.length === 0){
+		if (cart.length === 0) {
 			return alert('Вы ничего не заказали')
 		}
 		alert(`Сумма заказа: ${totalPrice}$
