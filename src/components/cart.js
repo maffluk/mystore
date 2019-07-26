@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ cart, removeFromCart }) => {
+export default ({ cart, removeFromCart, isOpenCart }) => {
 	let totalPrice = 0
 	let order = cart.map(({ title, ammount, price, img }) => {
 		totalPrice += price
@@ -28,7 +28,7 @@ export default ({ cart, removeFromCart }) => {
 	}
 
 	return (
-		<div className='openCart'>
+		<div className={`Cart ${isOpenCart ? 'openCart' : 'closeCart'}`}>
 			<div className='cartTitle'>Ваш заказ:</div>
 			{order}
 			<div className='cartFooter'>
